@@ -4,6 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Дизайн-студия"Нёрдс"</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,14 +20,15 @@
 				<li><a href="basket.html">Корзина</a></li>
 			</ul>
 		</nav>
-		<h1>Магазин готовых шаблонов</h1> </header>
+		<h1 class="main-title">Магазин готовых шаблонов</h1>
+	</header>
 	<main class="container">
-		<h1 class="visially-hidden">Шаблоны сайтов</h1>
+		<h1 class="visually-hidden">Шаблоны сайтов</h1>
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр сайтов</h2>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 				<fieldset>
-					<legend>Стоимость:</legend>
+					<legend class="filter-title">Стоимость:</legend>
 					<div class="price">
 						<input class="visually-hidden filter" type="range" min="0" max="15000" name="price">
 					</div>
@@ -35,8 +38,8 @@
 					<input id="end-price" name="name" placeholder="15000">
 				</fieldset>
 				<fieldset>
-					<legend>Сортировать:</legend>
-					<ul>
+					<legend class="filter-title">Сортировать:</legend>
+					<ul class="sort">
 						<li class="filter-option">
 							<input class="visually-hidden filter" type="radio" name="price" id="filter-price">
 							<label for="filter-price">по цене</label>
@@ -54,8 +57,8 @@
 					<button class="sort"><img src="img/icon-down-dir.svg" alt="Cортировать по убыванию"></button>
 				</fieldset>
 				<fieldset>
-					<legend>Сетка:</legend>
-					<ul>
+					<legend class="filter-title">Сетка:</legend>
+					<ul class="sort">
 						<li class="filter-option">
 							<input class="visually-hidden filter" type="radio" name="adaptive" id="filter-adaptive" checked>
 							<label for="filter-adaptive">Адаптивная</label>
@@ -71,8 +74,8 @@
 					</ul>
 				</fieldset>
 				<fieldset>
-					<legend>Особенности:</legend>
-					<ul>
+					<legend class="filter-title">Особенности:</legend>
+					<ul class="sort">
 						<li class="filter-option">
 							<input class="visually-hidden filter" type="checkbox" name="slider" id="filter-slider" checked>
 							<label for="filter-slider">Слайдер</label>
@@ -157,25 +160,48 @@
 				<li class="pagination-item"><a href="#">Следующая</a></li>
 			</ul>
 		</section>
-		<section class="contacts" aria-label="Контакты дизайн-студии Нёрдс"> <img src="img/map.psb" alt="Карта c указанием адреса компании">
-			<h3>Nerds desigh studio</h3>
-			<p> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-				<br>Телефон: +7 (812) 666-02-66
-			</p>
-				<a href="#">Напишите нам</a> <img src="img/map-marker.png" alt="Отметка адреса компании на карте">
-		</section>
-	</main>
+		<section class="contacts">
+			<img  src="img/map.jpg" alt="Карта c указанием адреса компании">
+			<img  class="marker-map" src="img/map-marker.png" alt="Отметка адреса компании на карте">
+			<div class="write-us">
+			<h3>Nёrds desigh studio</h3>
+			<p>191186, г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+				<br>тел. +7 (812) 275-75-75</p> <a href="">Напишите нам</a>
+			</div>
+		 </section>
+</main>
 	<footer class="main-footer">
 		<div class="footer-social" aria-label="Мы в социальных сетях">
-			<ul class="social">
-				<li><a class="social-button" href="#">Вконтакте</a></li>
-				<li><a class="social-button" href="#">Фейсбук</a></li>
-				<li><a class="social-button" href="#">Инстаграм</a></li>
+			<ul class="social-buttons">
+				<li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Следите за нами Вконтакте"></a></li>
+				<li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Следите за нами В Фейсбукe"></a></li>
+				<li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Следите за нами В Инстаграмe"></a></li>
 			</ul>
+		</div>
+			<div class="friendship">
 			<h2>Давайте дружить, это выгодно</h2>
 			<p>Скидка 10% для друзей из социальных сетей</p>
-		</div>
+		 </div>
 	</footer>
+	<section class="modal-write-us">
+		<h2>Напишите нам</h2>
+		<form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="write-item">
+				<label for="write-name">Ваше имя</label>
+				<input id="write-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+			</p>
+			<p class="write-item">
+				<label for="write-email">Ваш email</label>
+				<input id="write-email" type="text" name="email" value="" placeholder="email@example.com">
+			</p>
+			<p class="write-item">
+				<label for="text-item">Текст письма</label>
+				<input id="text-item" type="text" name="text" value="" placeholder="В свободной форме">
+			</p>
+			<button class="button" type="submit">Отправить</button>
+			<button class="modal-close" type="button">Закрыть</button>
+		</form>
+	</section>
 </body>
 
 </html>

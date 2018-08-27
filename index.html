@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Дизайн-студия"Нёрдс"</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 </head>
-
 <body>
 	<header class="main-menu">
 		<a class="main-header-logo"> <img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс"></a>
@@ -32,26 +33,36 @@
 				<p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p> <a href="to-know-more.html">Узнать больше</a> <img src="img/nerds-index-slide3.png" width="698" height="416" alt="Изображение планшета">
 			</li>
 		</ul>
-	</header>
+		<div class="pagination-sliders" aria-label="Переключатель слайдеров">
+			<a href="#"><img src="img/browser.svg"></a>
+		</div>
+  </header>
 	<main class="container">
 		<h1 class="visially-hidden">Дизайн-студия"Нёрдс"</h1>
 		<section class="projects">
 			<h2 class="visially-hidden">Услуги</h2>
 			<ul class="projects-list">
-				<li class="project-item"> <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+				<div class="index-columns">
+				<li class="project-item-1"> <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
 					<h3>Веб-сайты</h3>
 					<p>Мир никогда не будет прежним,после того как увидит ваш сайт.</p> <a href="#">Заказать</a>
 				</li>
-				<li class="project-item"> <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+			</div>
+			<div class="index-columns">
+				<li class="project-item-2"> <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
 					<h3>Приложения</h3>
 					<p>Покорите топ-10 приложений в AppStore и Google Play.</p> <a href="#">Заказать</a>
 				</li>
-				<li class="project-item"> <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+				</div>
+				<div class="index-columns">
+				<li class="project-item-3"> <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
 					<h3>Презентации</h3>
 					<p>Вы даже не подозреваете насколько вы изумительны.</p> <a href="#">Заказать</a>
 				 </li>
+				 </div>
 			</ul>
 		</section>
+		<div class="middle-colums">
 		<article class="about-us">
 			<h2>Мы маленькая,но гордая дизайн-студия из Краснодара.</h2>
 			<p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет превыше креатива.Работаем непокладая рук,как роботы.
@@ -65,18 +76,19 @@
 		<section class="statistics-list"> <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип дизайн-студии Нёрдс">
 			<h3>С 2014 года любим точность во всем</h3>
 			<table>
-				<tr>
-					<th>146%</th>
-					<th>100%</th>
-					<th>50%</th>
+				<tr class="top">
+					<th>146<span>%</span></th>
+					<th>100<span>%</span></th>
+					<th>50<span>%</span></th>
 				</tr>
-				<tr>
-					<th>Уровень самоотдачи</th>
-					<th>Соблюдение сроков</th>
-					<th>Минимальная предоплата</th>
+				<tr class="bottom">
+					<th>Уровень<br>самоотдачи</th>
+					<th>Соблюдение<br>сроков</th>
+					<th>Минимальная<br>предоплата</th>
 				</tr>
 			</table>
 		</section>
+	</div>
 		<div class="examples-list">
 			<ul class="examples-items">
 				<li><a href="academy.html"><img src="img/logo-1.png" alt="Логотип сайта Htmlacademy"></a></li>
@@ -85,24 +97,30 @@
 				<li><a href="mishka.html"><img src="img/logo-4.png" alt="Логотип сайта Mishka"></a></li>
 			</ul>
 		</div>
-		<section class="contacts"> <img src="img/map.psb" alt="Карта c указанием адреса компании">
-			<h3>Nerds desigh studio</h3>
-			<p> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-				<br>Телефон: +7 (812) 666-02-66</p> <a href="#">Напишите нам</a><img src="img/map-marker.png" alt="Отметка адреса компании на карте">
-    </section>
-	</main>
+		<section class="contacts">
+			<img  src="img/map.jpg" alt="Карта c указанием адреса компании">
+			<img  class="marker-map" src="img/map-marker.png" alt="Отметка адреса компании на карте">
+			<div class="write-us">
+			<h3>Nёrds desigh studio</h3>
+			<p>191186, г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+				<br>тел. +7 (812) 275-75-75</p> <a href="">Напишите нам</a>
+		  </div>
+		 </section>
+</main>
 	<footer class="main-footer">
 		<div class="footer-social" aria-label="Мы в социальных сетях">
 			<ul class="social-buttons">
-				<li><a class="social-button" href="#">Вконтакте</a></li>
-				<li><a class="social-button" href="#">Фейсбук</a></li>
-				<li><a class="social-button" href="#">Инстаграм</a></li>
+				<li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Следите за нами Вконтакте"></a></li>
+				<li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Следите за нами В Фейсбукe"></a></li>
+				<li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Следите за нами В Инстаграмe"></a></li>
 			</ul>
+		</div>
+			<div class="friendship">
 			<h2>Давайте дружить, это выгодно</h2>
 			<p>Скидка 10% для друзей из социальных сетей</p>
-		</div>
+		 </div>
 	</footer>
-	<section class="modal modal-write-us">
+	<section class="modal-write-us">
 		<h2>Напишите нам</h2>
 		<form class="write-form" action="https://echo.htmlacademy.ru" method="post">
 			<p class="write-item">

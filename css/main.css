@@ -1,0 +1,320 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #283136;
+
+background-color: #ffffff;
+background-position: top center;
+background-repeat: no-repeat;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-menu {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #283136;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #283136;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus{
+  color: #000000;
+}
+
+.slider {
+  list-style: none;
+}
+
+.slide h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size:55px;
+  line-height: 55px;
+}
+
+.slide a{
+  text-transform: uppercase;
+  color:#ffffff;
+  background-color: #fb565a;
+  width: 240px;
+  height: 50px;
+  padding-left: 53px;
+  padding-right: 53px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+.pagination-slider{
+  background-color: #ffffff;
+}
+
+.projects-list{
+  list-style: none;
+  display:flex;
+
+}
+
+.index-columns {
+  background-color: #ffffff;
+}
+
+.index-columns h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+.project-item-1 a{
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  text-transform: uppercase;
+  color:#ffffff;
+  background-color: #fb565a;
+  width: 160px;
+  height: 50px;
+}
+
+.project-item-2 a{
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  text-transform: uppercase;
+  color:#ffffff;
+  background-color: #00ca74;
+  width: 160px;
+  height: 50px;
+}
+
+.project-item-3 a{
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  text-transform: uppercase;
+  color:#ffffff;
+  background-color: #efc84a;
+  width: 160px;
+  height: 50px;
+}
+
+.about-us h2{
+  font-size:45px;
+  line-height: 45px;
+}
+
+.order-list{
+   list-style:none;
+}
+
+.statistics-list h3{
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+}
+
+.top th{
+  font-size: 45px;
+  line-height: 10.06px;
+  text-transform: uppercase;
+
+}
+
+.top span{
+  font-size: 22.5px;
+  }
+
+.bottom th{
+  font-size: 16px;
+  line-height: 18px;
+  padding-top:20px;
+  font-weight: 400;
+
+}
+
+.examples-items{
+  list-style:none;
+  opacity: 0.2;
+  display:flex;
+
+}
+
+
+
+.contacts {
+  width: auto;
+  background-color:#ffffff;
+  position: relative;
+
+}
+
+.write-us h3{
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-left: 42px;
+}
+
+.marker-map{
+  position: absolute;
+  top: 79px;
+left: 680px;
+}
+
+.write-us p{
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  text-align: left;
+  padding-left: 42px;
+ }
+
+.write-us{
+  width: 319px;
+  height: 309px;
+  background-color:#ffffff;
+  position:absolute;
+  top: 50px;
+  left: 141px;
+
+
+}
+
+.write-us a{
+  background-color: #fb565a;
+  width: auto;
+  height: 50px;
+  font-size: 16px;
+  line-height: 18px;
+  color:#ffffff;
+  text-align: center;
+  position: relative;
+  left: 42px;
+
+}
+
+ .main-footer{
+   width: auto;
+   height: 218px;
+   background-color: #ffffff;
+   display: flex;
+ }
+
+.footer-social{
+  width: 500px;
+  background-color: #ffffff;
+}
+
+.social-buttons{
+   list-style: none;
+   display: flex;
+}
+
+.social-button{
+   background-color: #e1e1e1;
+
+
+}
+
+.friendship{
+  width: 940px;
+  background-color:#ffffff;
+}
+
+.friendship h2{
+  font-size: 36px;
+  line-height: 36px;
+  color:#000000;
+  text-align: left;
+}
+
+.friendship p{
+  font-size: 16px;
+  line-height: 22px;
+  color:#444444;
+    text-align: left;
+
+}
+
+
+.modal-write-us h2{
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+
+.write-item{
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.main-title{
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+  color:  #000000;
+}
+
+
+.filter-title{
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sort{
+  list-style: none;
+}
+
+
+.sort li{
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+}
+
+.catalog{
+  width:820px;
+}
+
+
+
+.catalog-list{
+    list-style: none;
+
+}
