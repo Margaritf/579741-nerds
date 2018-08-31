@@ -42,19 +42,21 @@
 								<label for="filter-name">по названию</label>
 							</li>
 						</ul>
-						<button class="sort"> <img src="img/icon-up-dir.svg" alt="Cортировать по возрастанию"></button>
-						<button class="sort"> <img src="img/icon-down-dir.svg" alt="Cортировать по убыванию"></button>
+						<button class="sort"><img src="img/icon-up-dir.svg" alt="Cортировать по возрастанию"><span class="visually-hidden">Cортировать по возрастанию</span></button>
+						<button class="sort"><img src="img/icon-down-dir.svg" alt="Cортировать по убыванию"><span class="visually-hidden">Cортировать по убыванию</span></button>
 					</fieldset>
 				</div>
 				<div class="filter-div">
 					<fieldset>
 						<legend class="filter-title">Стоимость:</legend>
-						<div class="price">
-							<input class="visually-hidden filter" type="range" min="0" max="15000" name="price"> </div>
-						<label for="start-price">От</label>
-						<input id="start-price" name="name" placeholder="0">
-						<label for="end-price">До</label>
-						<input id="end-price" name="name" placeholder="15000"></fieldset>
+						  <div class="price">
+						  <input class="visually-hidden filter" type="range" min="0" max="15000" name="price">
+							</div>
+              <label for="start-price">От</label>
+						  <input id="start-price" name="name" placeholder="0">
+						  <label for="end-price">До</label>
+						  <input id="end-price" name="name" placeholder="15000">
+					</fieldset>
 					<fieldset>
 						<legend class="filter-title">Сетка:</legend>
 						<ul class="sort">
@@ -148,10 +150,10 @@
 				</li>
 			</ul>
 			<ul class="pagination-list" aria-label="Переключатель страниц каталога">
-				<li><a class="pagination-item pagination-item-current" href="#">1</a></li>
+				<li><a class="pagination-item active" href="#">1</a></li>
 				<li><a class="pagination-item" href="#">2</a></li>
 				<li><a class="pagination-item" href="#">3</a></li>
-				<li><a class="pagination-item" href="#">Следующая</a></li>
+				<li><a class="pagination-item  next-page" href="#">Следующая</a></li>
 			</ul>
 		</section>
 		<section class="contacts"><img src="img/map.jpg" alt="Карта c указанием адреса компании"> <img class="marker-map" src="img/map-marker.png" alt="Отметка адреса компании на карте">
