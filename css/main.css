@@ -265,7 +265,6 @@ a {
 	margin: 10px 10px;
 	background-color: #eeeeee;
 	display: inline-block;
-	/* vertical-align: middle; */
 	text-align: center;
 }
 
@@ -283,13 +282,13 @@ a {
 .filter-div{
 	width:440px;
 	position: relative;
-top: -165px;
+  top: -165px;
 }
 
 .sort-div{
 	width:1000px;
 	position: relative;
-left: 440px;
+  left: 440px;
 }
 
 
