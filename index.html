@@ -5,39 +5,67 @@
 	<meta charset="utf-8">
 	<title>Дизайн-студия"Нёрдс"</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet"> </head>
-
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
 <body>
 	<header class="main-menu">
-		<a class="main-header-logo"><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс"></a>
-		<nav aria-label="Содержимое" class="main-navigation">
-			<ul class="site-navigation">
-				<li><a href="studio.html">Студия</a></li>
-				<li><a href="clients.html">Клиенты</a></li>
-				<li><a href="shop.html">Магазин</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-				<li><a href="basket.html">Корзина</a></li>
+		<div class="main-menu-container">
+			<a class="main-header-logo"><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс"></a>
+			<nav aria-label="Содержимое" class="main-navigation">
+				<ul class="site-navigation">
+					<li><a href="studio.html">Студия</a></li>
+					<li><a href="clients.html">Клиенты</a></li>
+					<li><a href="shop.html">Магазин</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+					<li class="site-navigation-item bucket"><a href="basket.html">Корзина</a></li>
+				</ul>
+			</nav>
+			<ul class="slider">
+				<li class="slide slide-active">
+					<div class="slide-column-content">
+						<h1>Долго, дорого, скрупулезно.</h1>
+						<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+						<a href="to-know-more.html">Узнать больше</a>
+					</div>
+					<div class="slide-column-image">
+						<ul class="slider-pagination">
+							<li class="switcher">
+								<input class="slider-input-radio" type="radio" id="slider-1" name="slide-page-1" checked>
+								<label tabindex="0" for="slider-1"><span class="visually-hidden">слайд 1</span></label>
+							</li>
+							<li class="switcher">
+								<input class="slider-input-radio" type="radio" id="slider-2" name="slide-page-1">
+								<label tabindex="0" for="slider-2"><span class="visually-hidden">слайд 2</span></label>
+							</li>
+							<li class="switcher">
+								<input class="slider-input-radio" type="radio" id="slider-3" name="slide-page-1">
+								<label tabindex="0" for="slider-3"><span class="visually-hidden">слайд 3</span></label>
+							</li>
+						</ul>
+						<img class="slide-image image-1" src="img/nerds-index-slide1.png" width="698" height="416" alt="Изображение мобильных телефонов">
+					</div>
+				</li>
+				<li class="slide">
+					<div>
+						<h1>Любим математику как никто другой</h1>
+						<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+						<a href="to-know-more.html">Узнать больше</a>
+					</div>
+					<img class="slide-image image-2" src="img/nerds-index-slide2.png" width="698" height="416" alt="Изображение компьютеров">
+				</li>
+				<li class="slide">
+					<div>
+						<h1>Только ночь,только хардкор</h1>
+						<p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
+						<a href="to-know-more.html">Узнать больше</a>
+					</div>
+					<img class="slide-image image-3" src="img/nerds-index-slide3.png" width="698" height="416" alt="Изображение планшета">
+				</li>
 			</ul>
-		</nav>
-		<ul class="slider">
-			<li class="slide">
-				<h1>Долго,дорого,скурпулезно.</h1>
-				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-				<a href="to-know-more.html">Узнать больше</a> <img src="img/nerds-index-slide1.png" width="698" height="416" alt="Изображение мобильных телефонов">
-			</li>
-			<li class="slide">
-				<h1>Любим математику как никто другой</h1>
-				<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-				<a href="to-know-more.html">Узнать больше</a> <img src="img/nerds-index-slide2.png" width="698" height="416" alt="Изображение компьютеров">
-			</li>
-			<li class="slide">
-				<h1>Только ночь,только хардкор</h1>
-				<p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
-				<a href="to-know-more.html">Узнать больше</a> <img src="img/nerds-index-slide3.png" width="698" height="416" alt="Изображение планшета">
-			</li>
-		</ul>
-		<div class="pagination-sliders" aria-label="Переключатель слайдеров">
-			<a href="#"><img src="img/browser.svg" alt="Переключатель слайдов"></a>
+			<!-- <div class="pagination-sliders" aria-label="Переключатель слайдеров">
+				<a href="#"><img src="img/browser.svg" alt="Переключатель слайдов"></a>
+			</div> -->
 		</div>
 	</header>
 	<main class="container">
@@ -48,7 +76,7 @@
 				<li class="project-item web"><img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
 					<h3>Веб-сайты</h3>
 					<p>Мир никогда не будет прежним,после того как увидит ваш сайт.</p>
-					<a href="#">Заказать</a>
+					<a class="1-web" href="#">Заказать</a>
 				</li>
 				<li class="project-item apps"><img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
 					<h3>Приложения</h3>
@@ -63,7 +91,7 @@
 			</ul>
 		</section>
 		<div class="middle-colums">
-			<article class="about-us">
+			<div class="about-us">
 				<h2>Мы маленькая,но гордая дизайн-студия из Краснодара.</h2>
 				<p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет превыше креатива.Работаем непокладая рук,как роботы.
 				<br>Выполняем заказы на разработку:</p>
@@ -72,8 +100,8 @@
 					<li class="order-item">Мобильных приложений для IOS и Android</li>
 					<li class="order-item">Слайд-шоу и видео для корпоративных презентаций</li>
 				</ul>
-			</article>
-			<section class="statistics-list"><img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип дизайн-студии Нёрдс">
+			</div>
+			<div class="statistics-list"><img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип дизайн-студии Нёрдс">
 				<h3>С 2014 года любим точность во всем</h3>
 				<table>
 					<tr class="top">
@@ -90,7 +118,7 @@
 							<br>предоплата</th>
 					</tr>
 				</table>
-			</section>
+			</div>
 		</div>
 		<div class="examples-list">
 			<ul class="examples-items">
@@ -108,7 +136,8 @@
 				</li>
 			</ul>
 		</div>
-		<section class="contacts"><img src="img/map.jpg" alt="Карта c указанием адреса компании"><img class="marker-map" src="img/map-marker.png" alt="Отметка адреса компании на карте">
+		<section class="contacts">
+			<img src="img/map.jpg" alt="Карта c указанием адреса компании" width="100%" height="auto"><img class="marker-map" src="img/map-marker.png" alt="Отметка адреса компании на карте">
 			<div class="write-us">
 				<h3>Nёrds desigh studio</h3>
 				<p>191186, г. Санкт-Петербург, Б. Конюшенная, д. 19/8
