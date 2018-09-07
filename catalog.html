@@ -11,26 +11,21 @@
 
 <body>
 	<header class="main-menu">
-		<a class="main-header-logo">
-			<img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс">
-		</a>
-		<nav aria-label="Содержимое" class="main-navigation">
-			<ul class="site-navigation">
-				<li><a href="studio.html">Студия</a>
-				</li>
-				<li><a href="clients.html">Клиенты</a>
-				</li>
-				<li><a href="shop.html">Магазин</a>
-				</li>
-				<li><a href="contacts.html">Контакты</a>
-				</li>
-				<li><a href="basket.html">Корзина</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="title">
-			<h1 class="main-title">Магазин готовых шаблонов</h1>
+		<div class="main-menu-container">
+			<a class="main-header-logo">
+				<img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс">
+			</a>
+		  <nav aria-label="Содержимое" class="main-navigation">
+				<ul class="site-navigation">
+					<li><a href="studio.html">Студия</a></li>
+					<li><a href="clients.html">Клиенты</a></li>
+					<li><a href="shop.html">Магазин</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+					<li><a class="bucket" href="basket.html">Корзина</a></li>
+				</ul>
+			</nav>
 		</div>
+		<h1 class="main-title">Магазин готовых шаблонов</h1>
 	</header>
 	<main class="container">
 		<h1 class="visually-hidden">Шаблоны сайтов</h1>
@@ -38,7 +33,7 @@
 			<h2 class="visually-hidden">Фильтр сайтов</h2>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 				<div class="sort-div">
-					<!-- <fieldset> -->
+					<fieldset>
 						<span class="filter-title">Сортировать:</span>
 						<ul class="sort">
 							<li class="filter-option">
@@ -64,7 +59,7 @@
 								</button>
 							</li>
 						</ul>
-					<!-- </fieldset> -->
+				</fieldset>
 				</div>
 				<div class="filter-div">
 					<fieldset>
@@ -184,14 +179,10 @@
 		</div>
 		<div class="pagination">
 			<ul class="pagination-list" aria-label="Переключатель страниц каталога">
-				<li><a class="pagination-item active" href="#">1</a>
-				</li>
-				<li><a class="pagination-item" href="#">2</a>
-				</li>
-				<li><a class="pagination-item" href="#">3</a>
-				</li>
-				<li><a class="pagination-item  next-page" href="#">Следующая</a>
-				</li>
+				<li><a class="pagination-item active" href="#">1</a></li>
+				<li><a class="pagination-item" href="#">2</a></li>
+				<li><a class="pagination-item" href="#">3</a></li>
+				<li><a class="pagination-item  next-page" href="#">Следующая</a></li>
 			</ul>
 		</div>
 		<section class="contacts">
