@@ -703,7 +703,7 @@ button, input {
 	justify-content: space-between;
 	align-items: flex-start;
 	padding: 0;
-	margin: 80px auto 0 60px;
+	margin: 27px auto 0 60px;
 	display: flex;
 }
 
@@ -766,10 +766,6 @@ button, input {
 	width: auto;
 	position: relative;
 	display: flex;
-}
-
-.description-catalog {
-	display: none;
 }
 
 .catalog-list {
@@ -959,4 +955,63 @@ button, input {
 
 .down {
 	left: 48px;
+}
+
+.catalog-item::before {
+	content: url("../img/browser.svg");
+	position: relative;
+	top: 7px;
+	opacity: 0.5;
+}
+
+.catalog-item:hover::before {
+	opacity: 1;
+}
+
+.description-catalog {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	min-height: 231px;
+	background-color: #eeeeee;
+	padding: 6px;
+}
+
+.catalog-item:hover .description-catalog {
+	display: block;
+	z-index: 1;
+}
+
+.description-catalog h2 {
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 34px;
+}
+
+.description-catalog p {
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	color: #666666;
+	margin-bottom: 35px;
+	margin-top: 25px;
+}
+
+.description-catalog a {
+	font-size: 16px;
+	line-height: 18px;
+	padding-left: 61px;
+	padding-right: 61px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #fb565a;
+	margin-left: 68px;
+	position: relative;
 }
