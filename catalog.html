@@ -17,11 +17,11 @@
       </a>
       <nav aria-label="Содержимое" class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="shop.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a class="bucket" href="basket.html">Корзина</a></li>
+          <li><a class="site-navigation-item studio" href="studio.html">Студия</a></li>
+          <li><a class="site-navigation-item" href="clients.html">Клиенты</a></li>
+          <li><a class="site-navigation-item" href="shop.html">Магазин</a></li>
+          <li><a class="site-navigation-item" href="contacts.html">Контакты</a></li>
+          <li class="site-navigation-item bucket"><a href="basket.html">Корзина</a></li>
         </ul>
       </nav>
     </div>
@@ -101,26 +101,25 @@
           <span class="filter-title modificate">Сортировать:</span>
           <ul class="sort-option-list">
             <li class="filter-option">
-              <input class="visually-hidden filter" type="radio" name="price" id="filter-price">
-              <label for="filter-price">по цене</label>
+              <a href="#">По цене</a>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter" type="radio" name="type" id="filter-type">
-              <label for="filter-type">по типу</label>
+              <a href="#">по типу</a>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter" type="radio" name="name" id="filter-name">
-              <label for="filter-name">по названию</label>
+              <a href="#">по названию</a>
             </li>
+          </ul>
+          <ul class="sort-button-arrows">
             <li class="sort-button up">
-              <button>
+              <a href="#">
                 <img src="img/icon-up-dir.svg" alt="Cортировать по возрастанию"><span class="visually-hidden">Cортировать по возрастанию</span>
-              </button>
+              </a>
             </li>
             <li class="sort-button down">
-              <button>
+              <a href="#">
                 <img src="img/icon-down-dir.svg" alt="Cортировать по убыванию"><span class="visually-hidden">Cортировать по убыванию</span>
-              </button>
+              </a>
             </li>
           </ul>
         </div>
