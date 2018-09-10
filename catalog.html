@@ -230,21 +230,25 @@
   </footer>
   <section class="modal-write-us">
     <h2>Напишите нам</h2>
-    <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="write-item">
-        <label for="write-name">Ваше имя</label>
-        <input id="write-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-      </p>
-      <p class="write-item">
-        <label for="write-email">Ваш email</label>
-        <input id="write-email" type="text" name="email" value="" placeholder="email@example.com">
-      </p>
-      <p class="write-item">
-        <label for="text-item">Текст письма</label>
-        <input id="text-item" type="text" name="text" value="" placeholder="В свободной форме">
-      </p>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="row-1">
+        <p class="write-item">
+          <label for="input-name">Ваше имя</label>
+          <input id="input-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-item">
+          <label for="input-email">Ваш email</label>
+          <input id="input-email" type="text" name="email" value="" placeholder="email@example.com">
+        </p>
+      </div>
+      <div class="row-2">
+        <p class="write-item">
+          <label for="input-text">Текст письма</label>
+          <textarea id="input-text" name="input-text" placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
       <button class="button" type="submit">Отправить</button>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><img src="img/close-cross.svg" alt="Закрыть окно">Закрыть</button>
     </form>
   </section>
 </body>
