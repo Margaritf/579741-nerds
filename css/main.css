@@ -123,15 +123,26 @@ a {
 	display: flex;
 }
 
-.slide h1 {
+.slide-column h1 {
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-weight: bold;
 	font-size: 55px;
 	line-height: 55px;
-	width: 400px;
 	padding-top: 84px;
 	padding-bottom: 10px;
 	margin: 0;
+}
+
+.content-1 h1 {
+	width: 400px;
+}
+
+.content-2 h1 {
+	width: 548px;
+}
+
+.content-3 h1 {
+	width: 409px;
 }
 
 .slide p {
@@ -157,6 +168,18 @@ a {
 .slide-image.image-1 {
 	bottom: -14px;
 	right: -27px;
+	transform: scale(1.09, 1.04);
+}
+
+.slide-image.image-2 {
+	bottom: -13px;
+	right: 120px;
+	transform: scale(1.09, 1.04);
+}
+
+.slide-image.image-3 {
+	bottom: -13px;
+	right: -21px;
 	transform: scale(1.09, 1.04);
 }
 
@@ -747,7 +770,7 @@ button, input {
 	list-style: none;
 	margin-top: 36px;
 	margin-left: 0;
-	margin-bottom: 26px;
+	margin-bottom: -18px;
 }
 
 .pagination-item {
