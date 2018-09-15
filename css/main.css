@@ -214,14 +214,15 @@ a {
 }
 
 .slider-pagination {
-	width: auto;
+	width: 71px;
 	list-style: none;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	justify-content: space-between;
 	position: absolute;
-	bottom: 67px;
-	right: 508px;
+	bottom: 104px;
+	right: 504px;
 	z-index: 2;
 }
 
@@ -233,13 +234,16 @@ a {
 .slider-input-radio + label::before {
 	content: '';
 	display: block;
-	width: 20px;
-	height: 20px;
+	width: 4px;
+	height: 4px;
 	background-position: center;
 	border-radius: 50%;
+	background-color: white;
+	box-shadow: 0 0 0 2px white,0 0 0 7px white;
 }
 
 .slider-input-radio:checked + label::before {
+	box-shadow: 0 0 0 2px #c1c1c1,0 0 0 7px white;
 }
 
 .slider-input-radio:checked:active + label::before {
@@ -618,12 +622,13 @@ a {
 	color: rgba(255,255,255,0.3);
 }
 
+.social:active img {
+	opacity: 0.3;
+}
+
 .friendship {
 	width: 940px;
 	background-color: #ffffff;
-/* position: relative;
-	bottom: 448px;
-	right: -21px; */
 }
 
 .friendship h2 {
@@ -928,7 +933,10 @@ button, input {
 .pagination-item:active {
 	background-color: #d5d5d5;
 	box-shadow: inset 0 4px 1px 0 #bfbfbf;
-	font-style: rgba(0,0,0,0.3);
+}
+
+.pagination-item:active a {
+	color: rgba(0,0,0,0.3);
 }
 
 .next-page {
