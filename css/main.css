@@ -460,7 +460,7 @@ a {
 .bottom th {
 	font-size: 16px;
 	line-height: 18px;
-	padding-top: 36px;
+	padding-top: 27px;
 	font-weight: 400;
 	padding-left: 13px;
 	padding-right: 14px;
@@ -511,15 +511,14 @@ a {
 
 .contacts {
 	width: 100%;
-	background-color: #ffffff;
 	position: relative;
-	top: 41px;
+	margin-top: 41px;
+	margin-bottom: 42px;
 }
 
 .map {
 	width: 100%;
-	margin-top: 35px;
-	margin-left: 0px;
+	margin-top: 76px;
 }
 
 .write-us h3 {
@@ -527,12 +526,12 @@ a {
 	line-height: 30px;
 	text-transform: uppercase;
 	padding-left: 49px;
-	padding-top: 51px;
+	padding-top: 31px;
 }
 
 .marker-map {
-	position: relative;
-	top: -339px;
+	position: absolute;
+	top: 165px;
 	left: 775px;
 }
 
@@ -550,9 +549,9 @@ a {
 	width: 319px;
 	height: 309px;
 	background-color: #ffffff;
-	position: relative;
+	position: absolute;
 	left: 231px;
-	top: -589px;
+	top: 130px;
 }
 
 .write-us a {
@@ -586,14 +585,12 @@ a {
 	margin: 0 auto;
 	background-color: #ffffff;
 	display: flex;
+	margin-bottom: 55px;
 }
 
 .footer-social {
 	width: 500px;
 	background-color: #ffffff;
-	position: relative;
-	bottom: 439px;
-	right: 2px;
 }
 
 .social-list {
@@ -624,9 +621,9 @@ a {
 .friendship {
 	width: 940px;
 	background-color: #ffffff;
-	position: relative;
+/* position: relative;
 	bottom: 448px;
-	right: -21px;
+	right: -21px; */
 }
 
 .friendship h2 {
@@ -634,7 +631,7 @@ a {
 	line-height: 36px;
 	color: #000000;
 	text-align: left;
-	margin: 29px 0 0 1px;
+	margin: 23px 6px 12px 22px;
 }
 
 .friendship p {
@@ -642,20 +639,22 @@ a {
 	line-height: 22px;
 	color: #444444;
 	text-align: left;
-	margin: 13px 0 0 1px;
+	margin: 8px 0 0 22px;
 }
 
 .modal-write-us {
+	display: none;
 	width: 960px;
 	padding-top: 92px;
 	margin: 0 auto;
 	min-height: 501px;
 	text-transform: none;
-	bottom: 300px;
-	left: 21px;
-	position: relative;
+	top: calc(50% - 250px);
+	left: calc(50% - 480px);
+	position: fixed;
 	background-color: white;
 	box-shadow: 0 0 25px 0 rgba(0,0,0,.6);
+}
 }
 
 .modal-write-us h2 {
@@ -827,8 +826,8 @@ button, input {
 	line-height: 30px;
 	color: #000000;
 	text-transform: uppercase;
-	padding: 18px 0 0 13px;
-	margin-top: -30px;
+	padding: 16px 0 2px 17px;
+	margin-top: 0px;
 }
 
 .sort {
@@ -854,7 +853,7 @@ button, input {
 
 .filters {
 	width: 1200px;
-	margin: 0 auto;
+	margin: 0 auto -38px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -913,16 +912,27 @@ button, input {
 	display: inline-block;
 	text-align: center;
 	border-radius: 3px;
+	color: rgba(0,0,0,1);
 }
 
-.pagination-item.active, .pagination-item:hover {
+.pagination-item.active {
 	background-color: transparent;
 	border: 4px solid #eeeeee;
 	padding: 9px 16px;
 }
 
-.pagination-item.next-page {
-	padding: 13px 77px;
+.pagination-item:hover {
+	background-color: #dfdfdf;
+}
+
+.pagination-item:active {
+	background-color: #d5d5d5;
+	box-shadow: inset 0 4px 1px 0 #bfbfbf;
+	font-style: rgba(0,0,0,0.3);
+}
+
+.next-page {
+	padding: 13px 57px;
 }
 
 .pagination-item.next-page:hover {
@@ -933,7 +943,7 @@ button, input {
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 18px;
-	color: #000000;
+	color: rgba(0,0,0,1);
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
@@ -973,12 +983,25 @@ button, input {
 
 .filter .button {
 	margin: 0;
-	margin-left: 27px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-left: 28px;
 	background-color: #eeeeee;
 	color: #000000;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
+	margin-top: -4px;
+}
+
+.filter .button:hover {
+	background-color: #dfdfdf;
+}
+
+.filter .button:active {
+	background-color: #d5d5d5;
+	box-shadow: inset 0 4px 1px 0 #bfbfbf;
+	color: rgba(0,0,0,0.3);
 }
 
 .start-price {
@@ -996,6 +1019,10 @@ button, input {
 	background-repeat: no-repeat;
 	background-position: left center;
 	opacity: 0.4;
+}
+
+.filter-input-radio+label:hover::before {
+	opacity: 1;
 }
 
 .filter-input-radio:checked+label::before {
@@ -1021,6 +1048,10 @@ button, input {
 	opacity: 0.4;
 }
 
+.filter-input-checkbox+label:hover::before {
+	opacity: 1;
+}
+
 .filter-input-checkbox:checked+label::before {
 	background-image: url(../img/checkbox-on.svg);
 }
@@ -1037,17 +1068,22 @@ button, input {
 	margin-left: -1px;
 }
 
-.sort-option {
+.sort-option a {
 	color: #000000;
 	margin-left: 13px;
 	margin-right: 0;
 	font-size: 14px;
 	line-height: 35px;
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
-.sort-option:hover {
+.sort-option a:active,
+.sort-option.active a {
 	opacity: 1;
+}
+
+.sort-option a:hover {
+	opacity: 0.6;
 }
 
 .range-filter {
@@ -1122,7 +1158,7 @@ button, input {
 }
 
 .max-controls-window {
-	margin-left: 7px;
+	margin-left: 3px;
 }
 
 .price-controls input {
@@ -1142,8 +1178,8 @@ button, input {
 }
 
 .modificate {
-	margin-left: -23px;
-	padding-top: 75px;
+	margin-left: -26px;
+	padding-top: 45px;
 }
 
 .sort-button {
@@ -1223,6 +1259,15 @@ button, input {
 	background-color: #fb565a;
 	margin-left: 68px;
 	position: relative;
+}
+
+.description-catalog a:hover {
+	background-color: #e74246;
+}
+
+.description-catalog a:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 4px 1px 0 #c13135;
 }
 
 .sort-button-arrows {
