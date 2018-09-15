@@ -571,6 +571,16 @@ a {
 	border-radius: 5px;
 }
 
+.write-us a:hover {
+	background-color: #e74246;
+}
+
+.write-us a:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 4px 1px 0 #c13135;
+	color: rgba(255,255,255,0.3);
+}
+
 .main-footer {
 	width: 1200px;
 	margin: 0 auto;
