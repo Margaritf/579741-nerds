@@ -39,6 +39,16 @@ a {
 .main-header-logo {
 	width: 160px;
 	height: 130px;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.main-header-logo:hover {
+	opacity: 0.8;
+}
+
+.main-header-logo:active {
+	opacity: 0.3;
 }
 
 .main-header-logo img {
@@ -89,7 +99,7 @@ a {
 }
 
 .site-navigation a {
-	color: #283136;
+	color: #000000;
 	font-size: 16px;
 	display: inline-block;
 	line-height: 35px;
@@ -101,9 +111,17 @@ a {
 	margin-left: 3px;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
-	border-bottom: solid 2px #fb565a;
+.site-navigation a:hover {
+	color: #fb565a;
+}
+
+.site-navigation a:active {
+	opacity: 0.3;
+	color: #000000;
+}
+
+.site-navigation-item.active a {
+	border-bottom: 2px solid #fb565a;
 }
 
 .slider {
@@ -152,6 +170,7 @@ a {
 .slide a {
 	text-transform: uppercase;
 	color: #ffffff;
+	font-weight: lighter;
 	background-color: #fb565a;
 	width: 240px;
 	height: 50px;
@@ -159,6 +178,17 @@ a {
 	padding-right: 55px;
 	padding-top: 16px;
 	padding-bottom: 15px;
+	border-radius: 3px;
+}
+
+.slide a:hover {
+	background-color: #e74246;
+}
+
+.slide a:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 4px 1px 0 #c13135;
+	color: rgba(255,255,255,0.3);
 }
 
 .slide-image {
@@ -272,12 +302,13 @@ a {
 
 .project-item a {
 	font-size: 16px;
+	font-weight: lighter;
 	line-height: 20px;
 	padding-left: 38px;
 	padding-right: 40px;
 	padding-top: 17px;
 	padding-bottom: 13px;
-	border-radius: 4px;
+	border-radius: 3px;
 	text-transform: uppercase;
 	color: #ffffff;
 	width: 160px;
@@ -288,12 +319,42 @@ a {
 	background-color: #00ca74;
 }
 
+.apps a:hover {
+	background-color: #00bc6c;
+}
+
+.apps a:active {
+	background-color: #00aa62;
+	box-shadow: inset 0 4px 1px 0 #009958;
+	color: rgba(255,255,255,0.3);
+}
+
 .presentation a {
 	background-color: #efc84a;
 }
 
+.presentation a:hover {
+	background-color: #eab534;
+}
+
+.presentation a:active {
+	background-color: #e5a722;
+	box-shadow: inset 0 4px 1px 0 #ce961f;
+	color: rgba(255,255,255,0.3);
+}
+
 .web  a {
 	background-color: #fb565a;
+}
+
+.web  a:hover {
+	background-color: #e74246;
+}
+
+.web  a:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 4px 1px 0 #c13135;
+	color: rgba(255,255,255,0.3);
 }
 
 .middle-colums {
@@ -321,11 +382,6 @@ a {
 	padding: 86px 86px 5px 42px;
 	margin: 0;
 	font-weight: 500;
-}
-
-.dash::before {
-	content: '';
-	border: 2px solid red;
 }
 
 .about-us p {
@@ -417,7 +473,7 @@ a {
 
 .examples-items {
 	list-style: none;
-	opacity: 0.2;
+	opacity: 1;
 	display: flex;
 	padding: 0;
 	justify-content: space-between;
@@ -436,6 +492,15 @@ a {
 
 .examples-items a {
 	display: inline-block;
+	opacity: 0.2
+}
+
+.examples-items a:hover {
+	opacity: 1;
+}
+
+.examples-items a:active {
+	opacity: 0.1;
 }
 
 .examples {
@@ -521,7 +586,7 @@ a {
 	right: 2px;
 }
 
-.social-buttons {
+.social-list {
 	list-style: none;
 	display: flex;
 }
@@ -532,14 +597,18 @@ a {
 	border-radius: 80px;
 	background-color: #e1e1e1;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	margin-right: 11px;
 }
 
-.social-vk {
-	background-image: url('vk-icon.svg') no-repeat;
-	background-position: 10px 10px;
+.social-button a:hover {
+	background-color: #e74246;
+}
+
+.social-button a:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 4px 1px 0 #c13135;
+	color: rgba(255,255,255,0.3);
 }
 
 .friendship {
@@ -642,7 +711,28 @@ a {
 	position: absolute;
 	top: 62px;
 	right: 74px;
-	opacity: .5;
+	opacity: 0.5;
+}
+
+.modal-close:hover {
+	opacity: 1;
+}
+
+.modal-close:active {
+	border: 0 solid transparent;
+	opacity: 0.1;
+	outline-style: none;
+}
+
+.button:hover {
+	background-color: #e74246;
+}
+
+.button:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 4px 1px 0 #c13135;
+	color: rgba(255,255,255,0.3);
+	outline-style: none;
 }
 
 button, input {
@@ -672,9 +762,25 @@ button, input {
 	font-size: 16px;
 	line-height: 18px;
 	color: #444444;
-	border: 2px solid #d7dcde;
+	border: 2px solid rgba(68,68,68,0.3);
 	border-radius: 3px;
 	margin-top: 7px;
+}
+
+.modal-form input:hover,
+.modal-form textarea:hover {
+	border: 2px solid rgba(68,68,68,0.5);
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+	border: 2px solid rgba(68,68,68,1);
+}
+
+.modal-form input:invalid,
+.modal-form textarea:invalid {
+	border: 2px solid #e74246;
+	color: #e74246;
 }
 
 .modal-form textarea {
@@ -933,10 +1039,6 @@ button, input {
 .sort-option:hover {
 	opacity: 1;
 }
-
-
-
-/*  range*/
 
 .range-filter {
 	width: 260px;
