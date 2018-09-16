@@ -631,6 +631,10 @@ a {
 	margin-right: 11px;
 }
 
+.social img {
+	margin: auto;
+}
+
 .social-button a:hover {
 	background-color: #e74246;
 }
@@ -872,7 +876,7 @@ button, input {
 
 .filters {
 	width: 1200px;
-	margin: 0 auto;
+	margin: 0 auto 4px;
 	display: flex;
 	justify-content: space-between;
 }
