@@ -872,7 +872,7 @@ button, input {
 
 .filters {
 	width: 1200px;
-	margin: 0 auto -38px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 }
