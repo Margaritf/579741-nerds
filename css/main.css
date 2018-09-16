@@ -493,10 +493,23 @@ a {
 	padding: 0;
 	justify-content: space-between;
 	margin: 0;
-	position: relative;
-	top: 45px;
 	border-top: 2px solid #d0cece;
 	border-bottom: 2px solid #d0cece;
+}
+
+.examples-items li::after {
+	content: '';
+	display: block;
+	height: 53px;
+	width: 2px;
+	background-color: #d0cece;
+	position: absolute;
+	right: -58px;
+	top: 63px;
+}
+
+.examples-items li:last-child::after {
+	display: none;
 }
 
 .examples-items li {
@@ -522,13 +535,13 @@ a {
 .examples {
 	width: 1125px;
 	padding: 0;
-	margin: 5px auto;
+	margin: 50px auto 4px;
 }
 
 .contacts {
 	width: 100%;
 	position: relative;
-	margin-top: 50px;
+	margin-top: 0;
 	margin-bottom: 46px;
 }
 
