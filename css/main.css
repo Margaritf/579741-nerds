@@ -142,7 +142,7 @@ a {
 	display: flex;
 }
 
-.slide-column h1 {
+.slide-column h2 {
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-weight: bold;
 	font-size: 55px;
@@ -152,20 +152,21 @@ a {
 	margin: 0;
 }
 
-.content-1 h1 {
+.content-1 h2 {
 	width: 400px;
 }
 
-.content-2 h1 {
+.content-2 h2 {
 	width: 548px;
 }
 
-.content-3 h1 {
+.content-3 h2 {
 	width: 409px;
 }
 
 .slide p {
 	margin: 16px 36px 53px -1px;
+	font-weight: 400;
 }
 
 .slide a {
@@ -222,8 +223,8 @@ a {
 	display: flex;
 	justify-content: space-between;
 	position: absolute;
-	bottom: 104px;
-	right: 504px;
+	top: 423px;
+	left: 737px;
 	z-index: 2;
 }
 
@@ -270,7 +271,7 @@ a {
 
 .project-item {
 	width: 300px;
-	height: 350px;
+	min-height: 350px;
 	margin-bottom: 76px;
 }
 
@@ -291,7 +292,7 @@ a {
 }
 
 .project-item p {
-	font-weight: 300;
+	font-weight: 400;
 	margin: 17px 0 46px;
 }
 
@@ -536,12 +537,12 @@ a {
 	width: 100%;
 	position: relative;
 	margin-top: 0;
-	margin-bottom: 46px;
+	margin-bottom: 44px;
 }
 
 .map {
 	width: 100%;
-	margin-top: 76px;
+	margin-top: 73px;
 }
 
 .write-us h3 {
@@ -611,11 +612,6 @@ a {
 	margin-bottom: 55px;
 }
 
-.footer-social {
-	width: 500px;
-	background-color: #ffffff;
-}
-
 .social-list {
 	list-style: none;
 	display: flex;
@@ -652,6 +648,8 @@ a {
 .friendship {
 	width: 940px;
 	background-color: #ffffff;
+	margin-left: 103px;
+	margin-top: 4px;
 }
 
 .friendship h2 {
@@ -664,7 +662,8 @@ a {
 
 .friendship p {
 	font-size: 16px;
-	line-height: 16px;
+	line-height: 22px;
+	font-weight: 400;
 	color: #444444;
 	text-align: left;
 	margin: 8px 0 0 22px;
@@ -679,10 +678,10 @@ a {
 	text-transform: none;
 	position: fixed;
 	left: 50%;
-	top: 50%;
+	top: 0%;
 	transform: translate(-50%);
 	background-color: white;
-	box-shadow: 0 0 25px 0 rgba(0,0,0,.6);
+	box-shadow: 0px 10px 67px -1px;
 }
 
 .modal-show {
@@ -835,10 +834,10 @@ button, input {
 	letter-spacing: -3px;
 	text-align: center;
 	color: #000000;
-	font-weight: 400;
+	font-weight: 500;
 	padding-top: 47px;
-	padding-left: 93px;
-	padding-right: 65px;
+	padding-left: 97px;
+	padding-right: 63px;
 	padding-bottom: 109px;
 }
 
@@ -1051,8 +1050,14 @@ button, input {
 	opacity: 1;
 }
 
-.filter-input-radio+label:active {
-	opacity: 0.2;
+.filter-input-radio:active+label::before {
+	opacity: 0.4;
+	color: #283136;
+}
+
+.filter-input-radio:disabled+label {
+	opacity: 0.1;
+	pointer-events: none;
 }
 
 .filter-input-radio:checked+label::before {
@@ -1064,6 +1069,14 @@ button, input {
 	top: -16px;
 	right: -12px;
 	cursor: pointer;
+}
+
+.filter-input-radio:focus+label {
+	outline: 1px solid blue;
+}
+
+.filter-input-checkbox:focus+label {
+	outline: 1px solid blue;
 }
 
 .filter-input-checkbox+label::before {
@@ -1108,7 +1121,7 @@ button, input {
 	margin-left: 13px;
 	margin-right: 0;
 	font-size: 14px;
-	line-height: 35px;
+	line-height: 18px;
 	opacity: 0.3;
 }
 
@@ -1261,9 +1274,9 @@ button, input {
 	display: none;
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 7px;
 	right: 0;
-	min-height: 231px;
+	min-height: 221px;
 	background-color: #eeeeee;
 	padding: 6px;
 }
@@ -1278,7 +1291,7 @@ button, input {
 	line-height: 30px;
 	text-align: center;
 	text-transform: uppercase;
-	margin-top: 26px;
+	margin-top: 22px;
 }
 
 .description-catalog p {
@@ -1295,6 +1308,7 @@ button, input {
 .description-catalog a {
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: 400;
 	padding-left: 61px;
 	padding-right: 61px;
 	padding-top: 16px;
