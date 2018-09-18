@@ -535,14 +535,25 @@ a {
 
 .contacts {
 	width: 100%;
+	min-height: 415px;
 	position: relative;
-	margin-top: 0;
-	margin-bottom: 44px;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	background-image: url('../img/map-marker.png'), url('../img/map.jpg');
+	background-position: 775px 97px, center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: auto, 100% 96%;
+}
+
+.contacts-map {
+	width: 1440px;
+	height: 415px;
+	opacity: 1;
+	cursor: pointer;
 }
 
 .map {
 	width: 100%;
-	margin-top: 73px;
 }
 
 .write-us h3 {
@@ -575,7 +586,7 @@ a {
 	background-color: #ffffff;
 	position: absolute;
 	left: calc(50% - 560px);
-	top: 130px;
+	top: 53px;
 }
 
 .write-us a {
@@ -584,6 +595,7 @@ a {
 	height: 50px;
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: 400;
 	color: #ffffff;
 	text-align: center;
 	position: relative;
@@ -615,6 +627,7 @@ a {
 .social-list {
 	list-style: none;
 	display: flex;
+	margin-top: 22px;
 }
 
 .social {
@@ -673,19 +686,69 @@ a {
 	display: none;
 	width: 960px;
 	padding-top: 92px;
-	margin: 0 auto;
+	margin-top: -330px;
+	margin-left: -480px;
 	min-height: 501px;
 	text-transform: none;
 	position: fixed;
 	left: 50%;
-	top: 0%;
-	transform: translate(-50%);
+	top: 50%;
 	background-color: white;
 	box-shadow: 0px 10px 67px -1px;
 }
 
+@keyframes open {
+	0% {
+		transform: translateY(-2000px);
+	}
+
+	70% {
+		transform: translateY(-60px);
+	}
+
+	80% {
+		transform: translateY(-30px);
+	}
+
+	90% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
 .modal-show {
 	display: block;
+	-webkit-animation: open 0.6s;
+	animation: open 0.6s;
+}
+
+@keyframes shake {
+	0%,
+  100% {
+		transform: translateX(0);
+	}
+
+	10%,
+  30%,
+  50%,
+  70%,
+  90% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+  40%,
+  60%,
+  80% {
+		transform: translateX(10px);
+	}
+}
+
+.modal-error {
+	animation: shake 0.6s;
 }
 
 .modal-write-us h2 {
@@ -1333,4 +1396,18 @@ button, input {
 .sort-button-arrows {
 	list-style: none;
 	margin-left: -282px
+}
+
+.modal-map iframe {
+	position: relative;
+	z-index: 2;
+	border: none;
+}
+
+.modal-map p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	margin: 0;
 }
