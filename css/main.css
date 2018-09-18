@@ -554,6 +554,7 @@ a {
 
 .map {
 	width: 100%;
+	border: 0;
 }
 
 .write-us h3 {
