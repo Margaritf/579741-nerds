@@ -85,31 +85,24 @@ a {
 }
 
 .bucket {
-	margin-right: 3px;
-	margin-left: 25px;
+	margin-left: 221px;
 }
 
 .bucket::before {
 	content: url('../img/cart-icon.svg');
 	position: relative;
-	top: 7px;
 	top: 2px;
-	right: 27px;
-	margin-left: 194px;
+	right: 22px;
 }
 
 .site-navigation a {
 	color: #000000;
 	font-size: 16px;
+	font-weight: 500;
 	display: inline-block;
 	vertical-align: top;
 	line-height: 35px;
 	border-bottom: solid 2px transparent;
-}
-
-.studio {
-	margin-right: -8px;
-	margin-left: 3px;
 }
 
 .site-navigation a:hover {
@@ -147,6 +140,7 @@ a {
 	font-weight: bold;
 	font-size: 55px;
 	line-height: 55px;
+	font-weight: 500;
 	padding-top: 84px;
 	padding-bottom: 10px;
 	margin: 0;
@@ -172,7 +166,8 @@ a {
 .slide a {
 	text-transform: uppercase;
 	color: #ffffff;
-	font-weight: lighter;
+	font-weight: 500;
+	font-size: 16px;
 	background-color: #fb565a;
 	width: 240px;
 	height: 50px;
@@ -181,6 +176,7 @@ a {
 	padding-top: 16px;
 	padding-bottom: 15px;
 	border-radius: 3px;
+	line-height: 18px;
 }
 
 .slide a:hover {
@@ -293,7 +289,9 @@ a {
 
 .project-item p {
 	font-weight: 400;
+	font-size: 16px;
 	margin: 17px 0 46px;
+	line-height: 24px;
 }
 
 .project-list li {
@@ -312,8 +310,8 @@ a {
 
 .project-item a {
 	font-size: 16px;
-	font-weight: lighter;
-	line-height: 20px;
+	font-weight: 500;
+	line-height: 24px;
 	padding-left: 38px;
 	padding-right: 40px;
 	padding-top: 17px;
@@ -397,15 +395,19 @@ a {
 .about-us p {
 	padding: 0 20px;
 	margin: 1em 0 2.5em;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
 }
 
 .about-us h3 {
-	font-family: 'Roboto', 'Arial', serif;
-	font-weight: 600;
+	font-family: 'Roboto','Arial',serif;
+	font-weight: 700;
 	font-size: 16px;
+	line-height: 24px;
 	text-transform: uppercase;
 	margin: 10px 0 24px;
-	padding: 0 9px 0px 19px;
+	padding: 0 9px 0 19px;
 }
 
 .order-list {
@@ -416,6 +418,7 @@ a {
 	margin-bottom: 24px;
 	margin-left: -27px;
 	margin-top: 10px;
+	font-weight: 400;
 }
 
 .order-item::before {
@@ -441,6 +444,7 @@ a {
 	text-transform: uppercase;
 	margin: 20px 0 40px;
 	padding: 0 0 0 36px;
+	font-weight: 700;
 }
 
 .statistics-list table {
@@ -458,12 +462,15 @@ a {
 	text-transform: uppercase;
 	text-align: center;
 	padding: 0;
+	padding-left: 9px;
+	font-weight: bold;
 }
 
 .top span {
 	font-size: 24px;
 	position: relative;
 	top: -17px;
+	left: -10px;
 }
 
 .top td:last-child {
@@ -530,14 +537,13 @@ a {
 .examples {
 	width: 1125px;
 	padding: 0;
-	margin: 50px auto 4px;
+	margin: 50px auto 80px;
 }
 
 .contacts {
 	width: 100%;
 	min-height: 415px;
 	position: relative;
-	margin-top: 80px;
 	margin-bottom: 40px;
 	background-image: url('../img/map-marker.png'), url('../img/map.jpg');
 	background-position: 775px 97px, center;
@@ -563,6 +569,7 @@ a {
 	text-transform: uppercase;
 	padding-left: 49px;
 	padding-top: 31px;
+	font-weight: bold;
 }
 
 .marker-map {
@@ -577,8 +584,8 @@ a {
 	color: #666666;
 	text-align: left;
 	padding-left: 52px;
-	padding-top: 4px;
-	font-weight: 300;
+	padding-top: 5px;
+	font-weight: 400;
 }
 
 .write-us {
@@ -629,6 +636,7 @@ a {
 	list-style: none;
 	display: flex;
 	margin-top: 22px;
+	padding-left: 38px;
 }
 
 .social {
@@ -661,17 +669,16 @@ a {
 
 .friendship {
 	width: 940px;
-	background-color: #ffffff;
-	margin-left: 103px;
-	margin-top: 4px;
+	margin-left: 128px;
 }
 
 .friendship h2 {
 	font-size: 36px;
 	line-height: 36px;
+	font-weight: 700;
 	color: #000000;
 	text-align: left;
-	margin: 23px 6px 12px 22px;
+	margin-bottom: 10px;
 }
 
 .friendship p {
@@ -680,7 +687,7 @@ a {
 	font-weight: 400;
 	color: #444444;
 	text-align: left;
-	margin: 8px 0 0 22px;
+	margin-top: 10px;
 }
 
 .modal-write-us {
@@ -782,6 +789,7 @@ a {
 .button {
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: 500;
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #fb565a;
@@ -908,6 +916,7 @@ button, input {
 .filter-title {
 	font-size: 18px;
 	line-height: 30px;
+	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
 	padding: 16px 0 2px 17px;
@@ -938,7 +947,7 @@ button, input {
 
 .filters {
 	width: 1200px;
-	margin: 0 auto 4px;
+	margin: 0px auto 60px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -965,7 +974,6 @@ button, input {
 	display: flex;
 	margin-right: 25px;
 	margin-bottom: -30px;
-	font-weight: 300;
 }
 
 .right-column {
@@ -982,9 +990,8 @@ button, input {
 	padding-left: 60px;
 	white-space: nowrap;
 	list-style: none;
-	margin-top: 36px;
+	margin-top: 34px;
 	margin-left: 0;
-	margin-bottom: -18px;
 }
 
 .pagination-item {
@@ -1032,6 +1039,7 @@ button, input {
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: 500;
 	color: rgba(0,0,0,1);
 	text-transform: uppercase;
 	text-align: center;
@@ -1177,7 +1185,6 @@ button, input {
 	line-height: 35px;
 	font-size: 16px;
 	padding-right: 16px;
-	font-weight: 500;
 }
 
 .grid {
@@ -1191,6 +1198,7 @@ button, input {
 	margin-right: 0;
 	font-size: 14px;
 	line-height: 18px;
+	font-weight: 400;
 	opacity: 0.3;
 }
 
@@ -1254,7 +1262,7 @@ button, input {
 }
 
 .price-controls {
-	font-weight: 300;
+	font-weight: 400;
 	position: relative;
 	padding-right: 0px;
 	font-size: 16px;

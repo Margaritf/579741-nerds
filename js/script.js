@@ -1,5 +1,3 @@
-'use strict';
-
 var writeUsButton = document.querySelector('.write-us-button');
 var writeUsPopup = document.querySelector('.modal-write-us');
 var close = writeUsPopup.querySelector('.modal-close');
@@ -29,5 +27,16 @@ form.addEventListener('submit', function (evt) {
 	if (!text.value || !email.value) {
     evt.preventDefault();
 		writeUsPopup.classList.remove('modal-error');
+		writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
+		writeUsPopup.classList.add('modal-error');
+}
+});
+
+window.addEventListener("keydown", function (evt) {
+	if (evt.keyCode === 27) {
+		evt.preventDefault();
+		if (writeUsPopup.classList.contains("modal-show")) {
+			writeUsPopup.classList.remove("modal-show");
+}
 	}
 });
