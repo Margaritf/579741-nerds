@@ -627,9 +627,8 @@ a {
 .main-footer {
 	width: 1200px;
 	margin: 0 auto;
-	background-color: #ffffff;
 	display: flex;
-	margin-bottom: 55px;
+	margin-bottom: 60px;
 }
 
 .social-list {
@@ -650,7 +649,7 @@ a {
 }
 
 .social img {
-	margin: auto;
+	margin: auto 0;
 }
 
 .social-button a:hover {
@@ -1267,23 +1266,17 @@ button, input {
 	padding-right: 0px;
 	font-size: 16px;
 	text-transform: uppercase;
-	top: 47px;
-}
-
-.price-controls .min-price {
-	margin-left: 3px;
-}
-
-.price-controls .max-price {
-	margin-left: 31px;
+	display: flex;
+	top: 48px;
+	justify-content: space-between;
 }
 
 .min-controls-window {
-	margin-left: 3px;
+	margin-left: 7px;
 }
 
 .max-controls-window {
-	margin-left: 3px;
+	margin-left: 9px;
 }
 
 .price-controls input {
